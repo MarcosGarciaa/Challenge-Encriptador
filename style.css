@@ -1,0 +1,231 @@
+html{
+    background: #CCCCCC;
+}
+
+.contenido{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Prompt', sans-serif;
+}
+
+.superior{
+    background-color: #2B31FF;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+.logo{
+    width: 60px;
+    height: 60px;
+}
+
+.titulo{
+    text-align: center;
+    color: white;
+    margin: auto;
+    font-size: 2em;
+}
+
+.texto input[type=text]{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    vertical-align: text-top;
+    background-color: transparent;
+    margin: 50px 55px auto;
+    width: 550px;
+    height: 353px;
+    border: 1px solid #2B31FF;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.salida{
+    background-image: url(1685819315484.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.botones{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.encriptar, .desencriptar, .copiar{
+    padding: 10px;
+    color: white;
+    background-color: #2B31FF;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Prompt', sans-serif;
+    border: none;
+    border-radius: 20px;
+}
+
+.info_autor{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    color: white;
+    text-align: bottom;
+}
+
+.info_autor p{
+    background-color: #2B31FF;
+    padding: 9px 12px 9px 9px;
+}
+
+.github{
+    vertical-align: bottom;
+    width: 20px;
+    height: 20px;
+    margin-left: 4px;
+}
+
+.encriptar:hover, .desencriptar:hover, .copiar:hover{
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.encriptar:active, .desencriptar:active, .copiar:active{
+    background-color: white;
+    color: #2B31FF;
+}
+
+/*responsividad*/
+
+@media screen and (max-width:768px){
+    .superior{
+        padding: 10px
+    }
+
+    .titulo{
+        font-size: 2em;
+    }
+
+    .texto input[type="text"]{
+        width: 285px;
+        height: 260px;
+        margin-left: 45px;
+        margin-right: 40px;
+        margin-top: 40px;
+        font-size: 13px;
+    }
+
+    .salida{
+        background-size: 250px;
+    }
+
+    .encriptar, .desencriptar, .copiar{
+        font-size: 13px;
+        margin: auto 15px;
+    }
+
+    .encriptar:hover, .desencriptar:hover, .copiar:hover{
+        transform: none;
+    }
+
+    .info_autor{
+        position: absolute;
+        bottom: 0;
+    }
+
+    .info_autor p{
+        font-size: 13px;
+        padding: 8px 10px 8px 8px;
+    }
+
+    .github{
+        width: 15px;
+        height: 15px;
+    }
+
+}
+
+@media screen and (max-width:425px){
+
+    .logo{
+        width: 30px;
+        height: 30px;
+    }
+
+    .titulo{
+        font-size: 1em;       
+    }
+
+    .texto input[type=text]{
+        width: 306px;
+        height: 214px;
+        margin-left: 60px;
+        margin-right: 0;
+        font-size: 11px;
+    }
+
+    .salida{
+        background-size: 240px;
+    }
+
+    .botones{
+        margin-top: 25px;
+    }
+
+    .encriptar, .desencriptar, .copiar{
+        font-size: 10px;
+        margin-bottom: 10px; 
+        margin-left: 18px;    
+    }
+
+    .info_autor{
+        position: relative;
+        bottom: 0;
+    }
+
+    .info_autor p{
+        padding: 6px 10px 6px 6px;
+        font-size: 10px;
+    }
+
+    .github{
+        width: 14px;
+        height: 14px;
+    }
+}
+
+@media screen and (max-width:375px){
+    .logo{
+        width: 30px;
+        height: 30px;
+    }
+
+    .texto input[type=text]{
+        width: 287px;
+        height: 260px;
+        margin-left: 47px;
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+    .encriptar, .desencriptar, .copiar{
+        margin: auto 7px;
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:320px){
+    .logo{
+        width: 20px;
+        height: 20px;
+    }
+
+    .texto input[type=text]{
+        width: 240px;
+        height: 220px;
+        margin-left: 41px;
+        margin-right: 0;
+        font-size: 10px;
+    }
+    
+    .salida{
+        background-size: 200px;
+    }   
+}
